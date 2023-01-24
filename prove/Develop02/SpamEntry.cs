@@ -11,23 +11,29 @@ Behaviors: It's a list that will keep
 the entries and display the 
 information.
 */
-
+using System;
 public class SpamEntry
 {
-  /*TODO implement attributes to store the prompt, response, and date of the entry*/
+  public String _prompt;
+  public String _response;
+  public DateTime _date;
 
-  SpamEntry()
+   public SpamEntry()
   {
 
   }
 
   public void SpamDisplay()
   {
-    /*TODO implement method to display the entry*/
+    Console.WriteLine($"{_prompt}");
+    Console.WriteLine($"{_response}");
+    Console.WriteLine($"{_date}");
   }
 
   public void SpamSaveEntry(String spamPrompt, String spamResponse, DateTime spamDate)
   {
-    /*TODO implement method to save the attributes to the entry*/
+    _prompt = spamPrompt;
+    _response = spamResponse;
+    _date = spamDate;
   }
 }
