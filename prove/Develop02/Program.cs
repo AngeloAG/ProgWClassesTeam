@@ -28,10 +28,12 @@ class Program
   static void Main(string[] args)
   {
     Console.WriteLine("Hello Develop02 World!");
+    SpamCloseProgram();
+    
   }
 
   static void SpamCloseProgram()
   {
-    /*TODO implement method to close the program*/
+    System.Environment.Exit(0);
   }
 }
