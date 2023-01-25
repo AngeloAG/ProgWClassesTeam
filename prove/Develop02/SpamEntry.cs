@@ -18,14 +18,14 @@ public class SpamEntry
   public String _response;
   public DateTime _date;
 
-   public SpamEntry()
+  public SpamEntry()
   {
 
   }
 
   public void SpamDisplay()
   {
-    Console.WriteLine($"{_prompt}");
+    Console.WriteLine($"\n{_prompt}");
     Console.WriteLine($"{_response}");
     Console.WriteLine($"{_date}");
   }

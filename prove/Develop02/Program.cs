@@ -36,6 +36,7 @@ class Program
 
     do
     {
+      Console.Clear();
       Console.WriteLine("\nWhat do you want to do?");
       spamMenu.SpamDisplayMenu();
       string spamUserSelection = spamMenu.SpamAskForMenuSelection();
@@ -44,9 +45,9 @@ class Program
       {
         case "1":
           //Option to write a new entry
-          string prompt = spamPromptGenerator.SpamGetRandomPrompt();
-          Console.WriteLine(prompt);
-          spamJournal.SpamWriteNewEntry(prompt);
+          string spamPrompt = spamPromptGenerator.SpamGetRandomPrompt();
+          Console.WriteLine(spamPrompt);
+          spamJournal.SpamWriteNewEntry(spamPrompt);
           break;
         case "2":
           //Option to Display the entries
@@ -84,6 +85,8 @@ class Program
           break;
         default:
           Console.WriteLine("Please select an option from the menu. Just the number.");
+          Console.WriteLine("\nPress enter to continue");
+          Console.ReadLine();
           continue;
       }
 

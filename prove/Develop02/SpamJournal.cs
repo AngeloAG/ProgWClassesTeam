@@ -30,6 +30,8 @@ public class SpamJournal
     {
       entry.SpamDisplay();
     }
+    Console.WriteLine("\nPress enter to continue");
+    Console.ReadLine();
   }
 
   public void SpamLoadFromFile(String spamFilePath)
@@ -54,20 +56,27 @@ public class SpamJournal
 
       _entries.Add(spamNewEntry);
       Console.WriteLine("Success!! File Loaded");
+      Console.WriteLine("\nPress enter to continue");
+      Console.ReadLine();
     }
   }
 
   public void SpamSaveToFile(String spamFilePath)
   {
     /*TODO implement method to save the current list of entries to a file*/
+    spamFilePath = spamFilePath + ".csv";
     using (StreamWriter spamOutputFile = new StreamWriter(spamFilePath))
     {
       foreach (SpamEntry entry in _entries)
       {
-        spamOutputFile.WriteLine($"{entry._prompt},{entry._response},{entry._date.ToShortDateString()}");
+        String spamPromptToSave = entry._prompt.Replace('\"', ' ').Replace(',', ';').Replace('\n', ' ');
+        String spamResponseToSave = entry._response.Replace('\"', ' ').Replace(',', ';').Replace('\n', ' ');
+        spamOutputFile.WriteLine($"\"{spamPromptToSave}\",\"{spamResponseToSave}\",\"{entry._date.ToShortDateString()}\"");
       }
     }
     Console.WriteLine("Success!! New File Created");
+    Console.WriteLine("\nPress enter to continue");
+    Console.ReadLine();
   }
 
   public void SpamWriteNewEntry(String spamPrompt)
@@ -79,5 +88,8 @@ public class SpamJournal
 
     spamNewEntry.SpamSaveEntry(spamPrompt, spamUserResponse, spamCurrentDate);
     _entries.Add(spamNewEntry);
+    Console.WriteLine("Entry saved");
+    Console.WriteLine("\nPress enter to continue");
+    Console.ReadLine();
   }
 }

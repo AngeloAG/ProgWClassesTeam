@@ -22,7 +22,7 @@ public class SpamMenu
     _options.Add("2.Display");
     _options.Add("3.Load");
     _options.Add("4.Save");
-    _options.Add("5.Exit");
+    _options.Add("5.Exit\n");
 
   }
 
