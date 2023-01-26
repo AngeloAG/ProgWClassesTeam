@@ -22,16 +22,16 @@ public class SpamPromptGenerator
   public String SpamGetRandomPrompt()
   {
     /*TODO Implement the method to pick a prompt from the list and return it*/
-    List<string> SpamPromptList = new List<string>();
-    SpamPromptList.Add("What was the best part of your day?");
-    SpamPromptList.Add("What is something new you learned today?");
-    SpamPromptList.Add("What is something fun you did today?");
-    SpamPromptList.Add("How was the weather today?");
-    SpamPromptList.Add("What was your favorite meal today?");
+    List<string> spamPromptList = new List<string>();
+    spamPromptList.Add("What was the best part of your day?");
+    spamPromptList.Add("What is something new you learned today?");
+    spamPromptList.Add("What is something fun you did today?");
+    spamPromptList.Add("How was the weather today?");
+    spamPromptList.Add("What was your favorite meal today?");
 
-    Random SpamRandomPromptNumber = new Random();
-    int SpamListIndex = SpamRandomPromptNumber.Next(0, 4);
-    string SpamRandomPrompt = SpamPromptList[SpamListIndex];
-    return SpamRandomPrompt;
+    Random spamRandomPromptNumber = new Random();
+    int spamListIndex = spamRandomPromptNumber.Next(0, 4);
+    string spamRandomPrompt = spamPromptList[SpamListIndex];
+    return spamRandomPrompt;
   }
 }
