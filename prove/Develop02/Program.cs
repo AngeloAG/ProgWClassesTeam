@@ -1,5 +1,5 @@
 /*
-Author: Team SPAM
+Author: Team SPAM Jeremiah Powell, Angelo Arellano Gaona, Jeffrey Meldrum, Alvaro Nunez.
 Description:
 Responsibilities:
 It runs the main function and 
