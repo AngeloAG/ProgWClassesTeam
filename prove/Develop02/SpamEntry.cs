@@ -1,5 +1,5 @@
 /*
-Author: Team SPAM Jeremiah Powell, Angelo Arellano Gaona, Jeffrey Meldrum, 
+Author: Team SPAM Jeremiah Powell, Angelo Arellano Gaona, Jeffrey Meldrum, Alvaro Nunez.
 Description:
 Responsibilities: Creates entries 
 for the journal class to keep track 
