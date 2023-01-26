@@ -31,7 +31,7 @@ public class SpamPromptGenerator
 
     Random spamRandomPromptNumber = new Random();
     int spamListIndex = spamRandomPromptNumber.Next(0, 4);
-    string spamRandomPrompt = spamPromptList[SpamListIndex];
+    string spamRandomPrompt = spamPromptList[spamListIndex];
     return spamRandomPrompt;
   }
 }
