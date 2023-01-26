@@ -1,5 +1,5 @@
 /*
-Author: Team SPAM
+Author: Team SPAM Jeremiah Powell, Angelo Arellano Gaona, Jeffrey Meldrum, 
 Description:
 Responsibilities: It generates a list 
 of entries from the entry class

@@ -1,5 +1,5 @@
 /*
-Author: Team SPAM
+Author: Team SPAM Jeremiah Powell, Angelo Arellano Gaona, Jeffrey Meldrum, 
 Description:
 Responsibilities: Genterate an 
 interactable menu for use. 
