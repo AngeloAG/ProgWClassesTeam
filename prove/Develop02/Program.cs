@@ -64,6 +64,8 @@ class Program
           catch (Exception e)
           {
             Console.WriteLine($"Error {e}");
+            Console.WriteLine("\nPress enter to continue");
+            Console.ReadLine();
           }
           break;
         case "4":
@@ -77,6 +79,8 @@ class Program
           catch (Exception e)
           {
             Console.WriteLine($"Error {e}");
+            Console.WriteLine("\nPress enter to continue");
+            Console.ReadLine();
           }
           break;
         case "5":

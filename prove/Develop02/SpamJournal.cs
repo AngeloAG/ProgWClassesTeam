@@ -49,7 +49,7 @@ public class SpamJournal
 
       string spamPrompt = spamparts[0];
       string spamResponse = spamparts[1];
-      string spamDateString = spamparts[2];
+      string spamDateString = spamparts[2].Replace('"', ' ');
       DateTime spamDate = DateTime.Parse(spamDateString);
 
       spamNewEntry.SpamSaveEntry(spamPrompt, spamResponse, spamDate);
