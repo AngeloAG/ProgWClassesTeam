@@ -30,10 +30,10 @@ public class SpamEntry
     Console.WriteLine($"{_date}");
   }
 
-  public void SpamSaveEntry(String spamPrompt, String spamResponse, DateTime spamDate)
+  public void SpamSaveEntry(String _spamPrompt, String _spamResponse, DateTime _spamDate)
   {
-    _prompt = spamPrompt;
-    _response = spamResponse;
-    _date = spamDate;
+    _prompt = _spamPrompt;
+    _response = _spamResponse;
+    _date = _spamDate;
   }
 }
