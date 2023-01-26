@@ -1,5 +1,5 @@
 /*
-Author: Team SPAM Jeremiah Powell, Angelo Arellano Gaona, Jeffrey Meldrum, 
+Author: Team SPAM Jeremiah Powell, Angelo Arellano Gaona, Jeffrey Meldrum, Alvaro Nunez.
 Description:
 Responsibilities: It generates a 
 random prompt from a list.
